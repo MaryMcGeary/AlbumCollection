@@ -22,5 +22,19 @@ namespace AlbumCollection.Controllers
             Song model = songRepo.GetById(id);
             return View(model);
         }
+
+        [HttpGet]
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Song song)
+        {
+            songRepo.Create(song);
+            return RedirectToAction("Index");
+
+        }
     }
 }

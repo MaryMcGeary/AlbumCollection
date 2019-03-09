@@ -1,6 +1,7 @@
 ﻿using AlbumCollection.Controllers;
 using AlbumCollection.Models;
 using AlbumCollection.Repositories;
+using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,17 @@ namespace AlbumCollection.Tests
         }
 
         [Fact]
-        public void Details_Sets_Model_To_List_All_Songs()
+        public void Check_If_Song_Was_Created()  
+        {
+            var expectedModel = new Song();
+
+            var result = underTest.Create();
+
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void Check_If_Song_Was_Posted()  
         {
             var expectedModel = new List<Song>();
             songRepo.GetAll().Returns(expectedModel);
