@@ -38,18 +38,9 @@ namespace AlbumCollection.Tests
         [Fact]
         public void Check_If_Song_Was_Created()  
         {
-            var expectedModel = new Song();
-
             var result = underTest.Create();
 
             Assert.IsType<ViewResult>(result);
-        }
-
-        [Fact]
-        public void Check_If_Song_Was_Posted()  
-        {
-            var expectedModel = new List<Song>();
-            songRepo.GetAll().Returns(expectedModel);
         }
     }
 }

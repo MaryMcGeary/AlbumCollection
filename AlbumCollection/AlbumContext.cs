@@ -24,12 +24,12 @@ namespace AlbumCollection
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Pet>().HasData(
-            //    new Pet() { Id = 1, Name = "Roscoe", Description = "What a lazy dog!" },
-            //    new Pet() { Id = 2, Name = "Biggs", Description = "He gets his name because he loves to eat." },
-            //    new Pet() { Id = 3, Name = "Bella", Description = "Bella looks tough, but she's a scaredy cat." }
+            //modelBuilder.Entity<Album>().HasData(
+            //    new Album() { Id = 1, Name = "Roscoe", Description = "What a lazy dog!" },
+            //    new Album() { Id = 2, Name = "Biggs", Description = "He gets his name because he loves to eat." },
+            //    new Album() { Id = 3, Name = "Bella", Description = "Bella looks tough, but she's a scaredy cat." }
             //    );
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
     }
 }

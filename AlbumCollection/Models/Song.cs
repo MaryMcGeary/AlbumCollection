@@ -8,9 +8,9 @@ namespace AlbumCollection.Models
 {
     public class Song
     {
-        public int Id { get; set; }
+        public int SongId { get; set; }  
 
         [Display(Name = "Song Name")]
-        public string Name { get; set; }
+        public string SongName { get; set; } 
     }
 }
