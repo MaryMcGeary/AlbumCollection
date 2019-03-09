@@ -34,11 +34,11 @@ namespace AlbumCollection.Tests
             Assert.Equal(expectedModel, model);
         }
 
-        //[Fact]
-        //public void Details_Sets_Model_To_List_All_Songs()
-        //{
-        //    var expectedModel = new List<Song>();
-        //    songRepo.GetAll().Returns(expectedModel);
-        //}
+        [Fact]
+        public void Details_Sets_Model_To_List_All_Songs()
+        {
+            var expectedModel = new List<Song>();
+            songRepo.GetAll().Returns(expectedModel);
+        }
     }
 }
