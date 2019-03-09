@@ -37,7 +37,7 @@ namespace AlbumCollection.Tests
             var result = underTest.Details(expectedId);
             var model = (Album)result.Model;
 
-            //Assert.Equal(expectedModel, model);
+            Assert.Equal(expectedModel, model);
         }
     }
 }
