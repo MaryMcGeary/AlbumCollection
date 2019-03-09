@@ -8,11 +8,11 @@ namespace AlbumCollection.Repositories
 {
     public class AlbumRepository : IAlbumRepository
     {
-        AlbumContext db;
-        public AlbumRepository(AlbumContext db)
-        {
-            this.db = db; 
-        }
+        //AlbumContext db;
+        //public AlbumRepository(AlbumContext db)
+        //{
+        //    this.db = db; 
+        //}
 
         public IEnumerable<Album> GetAll() 
         {

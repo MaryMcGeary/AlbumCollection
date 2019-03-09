@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbumCollection", "AlbumCollection\AlbumCollection.csproj", "{547494EC-7180-402B-8B71-AF201B306FA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumCollection.Tests", "AlbumCollection.Tests\AlbumCollection.Tests.csproj", "{C268644E-57DA-4F33-883D-AC688FC42626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbumCollection.Tests", "AlbumCollection.Tests\AlbumCollection.Tests.csproj", "{C268644E-57DA-4F33-883D-AC688FC42626}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
