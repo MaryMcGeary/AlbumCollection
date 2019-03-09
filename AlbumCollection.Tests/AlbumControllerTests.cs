@@ -26,10 +26,18 @@ namespace AlbumCollection.Tests
             albumRepo.GetAll().Returns(expectedModel);
         }
 
-        //[Fact]
-        //public void Details_Sets_Model_To_Correct_Album() 
-        //{
+        [Fact]
+        public void Details_Sets_Model_To_Correct_Album()
+        {
+            var expectedId = 2;
+            var expectedModel = new Album();
 
-        //}
+            albumRepo.GetById(expectedId).Returns(expectedModel);
+
+            var result = underTest.Details(expectedId);
+            var model = (Album)result.Model;
+
+            //Assert.Equal(expectedModel, model);
+        }
     }
 }

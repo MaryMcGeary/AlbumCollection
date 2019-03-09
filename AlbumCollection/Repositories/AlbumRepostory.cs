@@ -19,5 +19,10 @@ namespace AlbumCollection.Repositories
             // return db.Albums.ToList();
             throw new NotImplementedException();
         }
+
+        public Album GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
