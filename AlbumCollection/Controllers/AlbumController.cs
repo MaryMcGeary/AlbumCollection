@@ -19,13 +19,14 @@ namespace AlbumCollection.Controllers
 
         public ViewResult Index()
         {
-            IEnumerable<Album> model = albumRepo.GetAll();
+            //IEnumerable<Album> model = albumRepo.GetAll();
+            var model = albumRepo.GetAll();
             return View(model);
         }
 
-        public ViewResult Details(int id)
+        public ViewResult Details(int albumId)  
         {
-            Album model = albumRepo.GetById(id);
+            Album model = albumRepo.GetById(albumId);
             return View(model);
         }
 
