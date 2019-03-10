@@ -24,11 +24,13 @@ namespace AlbumCollection.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public ViewResult Create()
         {
             return View();
         }
 
+        [HttpPost]
         public ActionResult Create(Song song)
         {
             songRepo.Create(song);
