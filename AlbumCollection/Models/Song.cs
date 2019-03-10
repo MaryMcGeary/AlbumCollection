@@ -9,7 +9,7 @@ namespace AlbumCollection.Models
     public class Song
     {
         public int SongId { get; set; }
-        public int AlbumId { get; set; }
+        public int AlbumId { get; set; } 
 
         [Display(Name = "Song Name")]
         public string SongName { get; set; } 
