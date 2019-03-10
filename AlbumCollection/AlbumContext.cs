@@ -31,12 +31,15 @@ namespace AlbumCollection
                 AlbumName = "Some Album",
                 ArtistName = "Not Me",
                 AlbumImageLocation = "Somewhere out there"
-            },
+            }
+            );
 
+            modelBuilder.Entity<Song>().HasData(
             new Song()
             {
                 SongId = 1,
-                SongName = "Yay!" }
+                SongName = "Yay!"
+            }
             );
 
             base.OnModelCreating(modelBuilder);

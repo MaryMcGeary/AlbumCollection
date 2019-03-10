@@ -36,11 +36,58 @@ namespace AlbumCollection.Tests
         }
 
         [Fact]
-        public void Check_If_Song_Was_Created()  
+        public void Check_Song_Created()    
         {
             var result = underTest.Create();
 
             Assert.IsType<ViewResult>(result);
         }
+
+        //public ViewResult Create()
+        //{
+        //    return View();
+        //}
+
+        //[Fact]
+        //public void Check_Post_for_Song()
+        //{
+        //    var songRepo = new SongRepository();
+        //    //    var dbMock = MockRepository.GenerateMock<DBService>();
+
+        //    //    var controller = new MyController(dbMock);
+        //    //    var result = (RedirectToRouteResult)controller.Add(new Thing());
+
+        //        Assert.IsType<RedirectToAction>("Index") 
+        //    //(result.Url, Is.EqualTo("/mynew/url"));
+
+        //}
+
+        //public ActionResult Create(Song song)
+        //{
+        //    songRepo.Create(song);
+        //    return RedirectToAction("Index");
+        //}
     }
 }
+//[Test]
+//public void Add_SavesThingToDB()
+//{
+//    var dbMock = MockRepository.GenerateMock<DBService>();
+//    dbMock.Expect(x => x.Save(thing)).Repeat.Once();
+
+//    var controller = new MyController(dbMock);
+//    controller.Add(new Thing());
+
+//    dbMock.VerifyAllExpectations();
+//}
+
+//[Test]
+//public void Add_RedirectsAfterSave()
+//{
+//    var dbMock = MockRepository.GenerateMock<DBService>();
+
+//    var controller = new MyController(dbMock);
+//    var result = (RedirectToRouteResult)controller.Add(new Thing());
+
+//    Assert.That(result.Url, Is.EqualTo("/mynew/url"));
+//}
