@@ -10,17 +10,48 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="~/Main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
-    <h1>My Album Index View</h1>
-    <p>
-        Here's all my albums.
-    </p>
-    <ol>
-        @foreach (var album in Model) 
-        {
-            <li><a href="/Album/Details/@album.AlbumId">@album.AlbumName</a></li>
-        }
-    </ol>
+    <div class="backgroundImage">
+        <h1>My Album Index View</h1>
+        <p>
+            Here's all my albums.
+        </p>
+        @*<ul>
+                @foreach (var album in Model)
+                {
+                    <li><a href="/Album/Details/@album.AlbumId">@album.AlbumName</a></li>
+                    <img src="~/@Model.CategoryImageLocation" />
+                }
+            </ul>*@
+
+        <div class="allAlbums">
+            @*<div class="all-boats2">*@
+            <div class="container" id="albumGallery">
+                @{ int i = 0;}
+                @foreach (var album in Model)
+                {
+                    <section class="grid-item grid-item @i">
+                        <h4><a href="/Album/Details/@album.AlbumId">@album.AlbumName</a></h4>
+                        <img src="@album.AlbumImageLocation" />
+
+                    </section>
+                    i++;
+                    @*<img src="@boat.ImageLocation" />
+                        <h4><a href="/Boat/Details/@boat.Id">@boat.Name</a></h4>*@
+                }
+            </div>
+
+            <p><a href="/Album">Back to list</a></p>
+        </div>
+        @*</div>*@
+    </div>
 </body>
 </html>
