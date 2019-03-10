@@ -19,9 +19,9 @@ namespace AlbumCollection.Repositories
             return db.Albums.ToList();
         }
 
-        public Album GetById(int id)
+        public Album GetById(int albumId) 
         {
-            return db.Albums.Single(album => album.AlbumId == id);
+            return db.Albums.Single(album => album.AlbumId == albumId);
         }
     }
 }

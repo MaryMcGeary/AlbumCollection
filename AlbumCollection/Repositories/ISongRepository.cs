@@ -9,7 +9,7 @@ namespace AlbumCollection.Repositories
     public interface ISongRepository
     {
         IEnumerable<Song> GetAll();
-        Song GetById(int id);
+        Song GetById(int SongId); 
         void Create(Song song);
     }
 }

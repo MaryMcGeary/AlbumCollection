@@ -9,7 +9,7 @@ namespace AlbumCollection.Repositories
     public interface IAlbumRepository
     {
         IEnumerable<Album> GetAll();
-        Album GetById(int id);
+        Album GetById(int AlbumId); 
 
 
     }

@@ -8,11 +8,17 @@ namespace AlbumCollection.Repositories
 {
     public class SongRepository : ISongRepository
     {
-        //AlbumContext db;
+        AlbumContext db;
+        //public SongRepository(AlbumContext db)
+        //{
+        //    this.db = db;
+        //}
 
         public void Create(Song song)
         {
-            throw new NotImplementedException();
+            db.Songs.Add(song);
+            db.SaveChanges();
+            //throw new NotImplementedException();
         }
 
         public IEnumerable<Song> GetAll()
@@ -20,7 +26,7 @@ namespace AlbumCollection.Repositories
             throw new NotImplementedException();
         }
 
-        public Song GetById(int id)
+        public Song GetById(int songId)
         {
             throw new NotImplementedException();
         }
