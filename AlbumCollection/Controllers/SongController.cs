@@ -11,6 +11,7 @@ namespace AlbumCollection.Controllers
     public class SongController : Controller
     {
         ISongRepository songRepo;
+        private object album;
 
         public SongController(ISongRepository songRepo) 
         {
@@ -31,8 +32,12 @@ namespace AlbumCollection.Controllers
         public ActionResult Create(Song song)
         {
             songRepo.Create(song);
-            return RedirectToAction("Index");
+            return RedirectToAction("Details/");
+        }
 
+        private ActionResult RedirectToAction(object p, string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

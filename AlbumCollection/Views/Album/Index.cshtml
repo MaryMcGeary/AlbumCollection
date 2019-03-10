@@ -33,7 +33,7 @@
             </ul>*@
 
         <div class="allAlbums">
-            @*<div class="all-boats2">*@
+           
             <div class="container" id="albumGallery">
                 @{ int i = 0;}
                 @foreach (var album in Model)
@@ -44,11 +44,10 @@
 
                     </section>
                     i++;
-                    @*<img src="@boat.ImageLocation" />
-                        <h4><a href="/Boat/Details/@boat.Id">@boat.Name</a></h4>*@
+                    
                 }
             </div>
-
+            @*<a href="/Song/Create/@Model.AlbumId" />Add a Song to the Album>*@
             <p><a href="/Album">Back to list</a></p>
         </div>
         @*</div>*@

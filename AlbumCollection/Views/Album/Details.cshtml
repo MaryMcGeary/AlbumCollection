@@ -1,4 +1,4 @@
-﻿@model AlbumCollection.Models.Song
+﻿@model AlbumCollection.Models.Album
 
 @{
     Layout = null;
@@ -13,9 +13,32 @@
     <link href="~/Main.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>My Album Details View</h1>
+
+    @*<h1>My Album Details View</h1>
+        <h2>@Model.AlbumId</h2>
+        <p>Album Name: @Model.AlbumName</p>
+        <p></p>*@
     <p>
         Here's the songs that are on the chosen album.
     </p>
+    
+
+    <div class="albumInfo">
+
+        <h2>@Model.AlbumId</h2>
+        <p>@Model.AlbumName</p>
+
+        <h2>Songs</h2>
+        @foreach (var song in Model.Song)
+        {
+            <p>@song.SongName</p>
+        }
+        <a href="/Song/Create/@Model.AlbumId" />Add a song to the Album
+
+        
+        <a href="/Album">Back to list</a>
+
+    </div>
+
 </body>
 </html>

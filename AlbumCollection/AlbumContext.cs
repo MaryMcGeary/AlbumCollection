@@ -28,7 +28,7 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 1,
-                CategoryId = 1,
+                //CategoryId = 1,
                 AlbumName = "Jesus Use Me",
                 ArtistName = "The Faith Tones",
                 AlbumImageLocation = "Img/TheFaithTones.jpg"
@@ -36,7 +36,7 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 2,
-                CategoryId = 2,
+                //CategoryId = 2,
                 AlbumName = "Mr. Spock's Music From Outer Space",
                 ArtistName = "Leonard Nimoy",
                 AlbumImageLocation = "Img/LeonardNimoy.jpg"
@@ -44,7 +44,7 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 3,
-                CategoryId = 3,
+                //CategoryId = 3,
                 AlbumName = "Old McDonald Had a Farm",
                 ArtistName = "Alan Mills and the Four Shipmates",
                 AlbumImageLocation = "Img/AlanMills.jpg"
@@ -55,37 +55,37 @@ namespace AlbumCollection
             new Song()
             {
                 SongId = 1,
-                CategoryId = 1,
+                AlbumId = 1,
                 SongName = "Exposed"
             },
             new Song()
             {
                 SongId = 2,
-                CategoryId = 1,
+                AlbumId = 1,
                 SongName = "It's Different Now"
             },
             new Song()
             {
                 SongId = 3,
-                CategoryId = 2,
+                AlbumId = 2,
                 SongName = "Music to Watch Space Girls By"
             },
             new Song()
             {
                 SongId = 4,
-                CategoryId = 2,
+                AlbumId = 2,
                 SongName = "Twinkle, Twinkle Little Earth"
             },
             new Song()
             {
                 SongId = 5,
-                CategoryId = 3,
+                AlbumId = 3,
                 SongName = "I Know an Old Lady"
             },
             new Song()
             {
                 SongId = 6,
-                CategoryId = 3,
+                AlbumId = 3,
                 SongName = "Froggie Went A-Courtin"
             }
             );
