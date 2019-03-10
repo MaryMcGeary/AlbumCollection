@@ -14,14 +14,22 @@ namespace AlbumCollection.Repositories
             this.db = db; 
         }
 
-        public IEnumerable<Album> GetAll() 
+        public IEnumerable<Album> GetAll()
         {
             return db.Albums.ToList();
-        }
+            //}
 
+            //IEnumerable<int> enumerable = Enumerable.Range(1, 300);
+            //List<int> AlbumId = enumerable.ToList(); 
+        }
         public Album GetById(int albumId) 
         {
             return db.Albums.Single(album => album.AlbumId == albumId);
         }
+
+        //Album IAlbumRepository.GetById(int albumId)
+        //{
+        //    return db.Albums.Single(album => album.AlbumId == albumId);
+        //}
     }
 }

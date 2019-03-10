@@ -23,12 +23,14 @@ namespace AlbumCollection.Repositories
 
         public IEnumerable<Song> GetAll()
         {
-            throw new NotImplementedException();
+            return db.Songs.ToList();
+            //throw new NotImplementedException();
         }
 
         public Song GetById(int songId)
         {
-            throw new NotImplementedException();
+            return db.Songs.Single(song => song.SongId == songId);
+            //throw new NotImplementedException();
         }
     }
 }
