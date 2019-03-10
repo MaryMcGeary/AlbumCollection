@@ -17,12 +17,11 @@ namespace AlbumCollection.Repositories
         public IEnumerable<Album> GetAll() 
         {
             return db.Albums.ToList();
-            //throw new NotImplementedException();
         }
 
         public Album GetById(int id)
         {
-            throw new NotImplementedException();
+            return db.Albums.Single(album => album.AlbumId == id);
         }
     }
 }

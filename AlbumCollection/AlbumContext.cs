@@ -25,12 +25,21 @@ namespace AlbumCollection
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Album>().HasData(
-            new Album() { AlbumId = 1, AlbumName = "Some Album", ArtistName = "Not Me" },
-            //    new Album() { Id = 2, Name = "Biggs", Description = "He gets his name because he loves to eat." },
-            //    new Album() { Id = 3, Name = "Bella", Description = "Bella looks tough, but she's a scaredy cat." }
-            //    );
-            base.OnModelCreating(modelBuilder)
+            new Album()
+            {
+                AlbumId = 1,
+                AlbumName = "Some Album",
+                ArtistName = "Not Me",
+                AlbumImageLocation = "Somewhere out there"
+            },
+
+            new Song()
+            {
+                SongId = 1,
+                SongName = "Yay!" }
             );
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
