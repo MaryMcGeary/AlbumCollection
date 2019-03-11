@@ -11,18 +11,11 @@ namespace AlbumCollection.Controllers
     public class SongController : Controller
     {
         ISongRepository songRepo;
-        //private object album;
 
         public SongController(ISongRepository songRepo) 
         {
             this.songRepo = songRepo;
         }
-
-        //public ViewResult Index()
-        //{
-        //    var model = songRepo.GetAll();
-        //    return View(model);
-        //}
 
         public ViewResult Details(int id)
         {
@@ -42,10 +35,5 @@ namespace AlbumCollection.Controllers
             songRepo.Create(song);
             return RedirectToAction("Details/" + song.AlbumId, "Album");
         }
-
-        //private ActionResult RedirectToAction(object p, string v)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

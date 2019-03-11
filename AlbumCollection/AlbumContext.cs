@@ -28,7 +28,6 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 1,
-                //CategoryId = 1,
                 AlbumName = "Jesus Use Me",
                 ArtistName = "The Faith Tones",
                 AlbumImageLocation = "Img/TheFaithTones.jpg"
@@ -36,7 +35,6 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 2,
-                //CategoryId = 2,
                 AlbumName = "Mr. Spock's Music From Outer Space",
                 ArtistName = "Leonard Nimoy",
                 AlbumImageLocation = "Img/LeonardNimoy.jpg"
@@ -44,7 +42,6 @@ namespace AlbumCollection
             new Album()
             {
                 AlbumId = 3,
-                //CategoryId = 3,
                 AlbumName = "Old McDonald Had a Farm",
                 ArtistName = "Alan Mills and the Four Shipmates",
                 AlbumImageLocation = "Img/AlanMills.jpg"

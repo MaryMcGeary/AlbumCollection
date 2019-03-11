@@ -69,25 +69,3 @@ namespace AlbumCollection.Tests
         //}
     }
 }
-//[Test]
-//public void Add_SavesThingToDB()
-//{
-//    var dbMock = MockRepository.GenerateMock<DBService>();
-//    dbMock.Expect(x => x.Save(thing)).Repeat.Once();
-
-//    var controller = new MyController(dbMock);
-//    controller.Add(new Thing());
-
-//    dbMock.VerifyAllExpectations();
-//}
-
-//[Test]
-//public void Add_RedirectsAfterSave()
-//{
-//    var dbMock = MockRepository.GenerateMock<DBService>();
-
-//    var controller = new MyController(dbMock);
-//    var result = (RedirectToRouteResult)controller.Add(new Thing());
-
-//    Assert.That(result.Url, Is.EqualTo("/mynew/url"));
-//}

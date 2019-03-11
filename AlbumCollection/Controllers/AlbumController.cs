@@ -19,7 +19,6 @@ namespace AlbumCollection.Controllers
 
         public ViewResult Index()
         {
-            //IEnumerable<Album> model = albumRepo.GetAll();
             var model = albumRepo.GetAll();
             return View(model);
         }

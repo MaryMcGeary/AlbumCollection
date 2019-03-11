@@ -10,7 +10,5 @@ namespace AlbumCollection.Repositories
     {
         IEnumerable<Album> GetAll();
         Album GetById(int AlbumId); 
-
-
     }
 }

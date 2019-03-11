@@ -15,19 +15,8 @@
 <body>
     <div class="backgroundImage">
 
-        @*<h1>My Album Details View</h1>
-            <h2>@Model.AlbumId</h2>
-            <p>Album Name: @Model.AlbumName</p>
-            <p></p>*@
-        @*<p>
-                Here's the songs that are on the chosen album.
-            </p>*@
-
-
-        @*<div class="albumInfo">*@
         <div class="container" id="songGallery">
 
-            @*<h2>@Model.AlbumId</h2>*@
             <h2>@Model.AlbumName</h2>
             <h3>by @Model.ArtistName</h3>
 
@@ -40,12 +29,14 @@
                     <li>@song.SongName</li>
                 }
             </ol>
-             
+          </div>
+        <div class="songLink">
             <a href="/Song/Create/@Model.AlbumId" />Add your own song title
         </div>
-       
-        <a href="/Album/Index">Back to list</a>
-
+        
+        <div class="songLink1">
+            <a href="/Album">Back to list</a>
+        </div>
     </div>
 </body>
 </html>
