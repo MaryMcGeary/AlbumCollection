@@ -18,6 +18,12 @@ namespace AlbumCollection.Controllers
             this.songRepo = songRepo;
         }
 
+        //public ViewResult Index()
+        //{
+        //    var model = songRepo.GetAll();
+        //    return View(model);
+        //}
+
         public ViewResult Details(int id)
         {
             Song model = songRepo.GetById(id);

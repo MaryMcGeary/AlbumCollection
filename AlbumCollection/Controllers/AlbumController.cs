@@ -29,18 +29,5 @@ namespace AlbumCollection.Controllers
             Album model = albumRepo.GetById(albumId);
             return View(model);
         }
-
-        //[HttpGet]
-        //public ViewResult Create()
-        //{
-        //    return View();
-        //}
-
-        //[HttpPost]
-        //public ActionResult Create(Pet pet)
-        //{
-        //    petRepo.Create(pet);
-        //    return RedirectToAction("Index");
-        //}
     }
 }
