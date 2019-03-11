@@ -1,11 +1,12 @@
 ﻿body {
     width: 100%;
     min-width: 25%;
-    font: 'Great Vibes';
+    /*font: 'Great Vibes';
     color: #fff;
-    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);*/
     text-align: center;
     height: 100vh;
+    color: darkslateblue;
 }
 
 .backgroundImage {
@@ -15,7 +16,7 @@
     height: 100vh;
 }
 
-    .backgroundImage h1{
+    /*.backgroundImage h1{
         color: darkslateblue;
     }
 
@@ -25,15 +26,24 @@
 
     .backgroundImage h3 {
         color: darkslateblue;
-    }
+    }*/
+
+/*.container h1, h2, h3 {
+    color: darkslateblue;
+}
+
+.container a {
+    color: darkslateblue;
+}*/
 
 #albumGallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 15vw);
+    grid-template-rows: repeat(1, 17vw);
     grid-gap: 10rem;
     width: 80%;
     height: 90%;
+    /*margin: 5vh;*/
     margin-left: 10vh;
     padding-top: 10vh;
 }
@@ -44,13 +54,13 @@
     color: darkslateblue;
 }
 
-    .container h4 a {
+    /*.container h4 a {
         color: darkslateblue;
     }
 
     .container h4 p {
         grid-row: 2;
-    }
+    }*/
 
 .grid-item, img {
     width: 100%;
@@ -59,5 +69,13 @@
 }
 
 #backToList {
+    padding-top: 10vh;
+}
+
+.songList {
+    font-size: 3vh;
+}
+
+body a {
     padding-top: 10vh;
 }

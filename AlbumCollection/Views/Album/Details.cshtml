@@ -13,33 +13,41 @@
     <link href="~/Main.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="backgroundImage">
 
-    @*<h1>My Album Details View</h1>
-        <h2>@Model.AlbumId</h2>
-        <p>Album Name: @Model.AlbumName</p>
-        <p></p>*@
-    @*<p>
-        Here's the songs that are on the chosen album.
-    </p>*@
-    
+        @*<h1>My Album Details View</h1>
+            <h2>@Model.AlbumId</h2>
+            <p>Album Name: @Model.AlbumName</p>
+            <p></p>*@
+        @*<p>
+                Here's the songs that are on the chosen album.
+            </p>*@
 
-    <div class="albumInfo">
 
-        @*<h2>@Model.AlbumId</h2>*@
-        <h2>@Model.AlbumName</h2>
-        <h3>by @Model.ArtistName</h3>
+        @*<div class="albumInfo">*@
+        <div class="container" id="songGallery">
 
-        <h4>Song List</h4>
-        @foreach (var song in Model.Song)
-        {
-            <p>@song.SongName</p>
-        }
-        <a href="/Song/Create/@Model.AlbumId" />Want to add your own song title to the Album? Go ahead, click the link.
+            @*<h2>@Model.AlbumId</h2>*@
+            <h2>@Model.AlbumName</h2>
+            <h3>by @Model.ArtistName</h3>
 
-        
+            <h4>Song List</h4>
+
+        </div>
+
+        <div class="songList">
+            <ol>
+                @foreach (var song in Model.Song)
+                {
+                    <li>@song.SongName</li>
+                }
+            </ol>
+
+            <a href="/Song/Create/@Model.AlbumId" />Want to add your own song title?
+        </div>
+       
         <a href="/Album">Back to list</a>
 
     </div>
-
 </body>
 </html>
