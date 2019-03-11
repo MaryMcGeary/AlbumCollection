@@ -33,8 +33,6 @@
 
             <h4>Song List</h4>
 
-        </div>
-
         <div class="songList">
             <ol>
                 @foreach (var song in Model.Song)
@@ -42,11 +40,11 @@
                     <li>@song.SongName</li>
                 }
             </ol>
-
-            <a href="/Song/Create/@Model.AlbumId" />Want to add your own song title?
+             
+            <a href="/Song/Create/@Model.AlbumId" />Add your own song title
         </div>
        
-        <a href="/Album">Back to list</a>
+        <a href="/Album/Index">Back to list</a>
 
     </div>
 </body>
