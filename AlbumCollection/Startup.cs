@@ -36,7 +36,7 @@ namespace AlbumCollection
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Album}/{action=Index}/{albumId?}");
+                    template: "{controller=Album}/{action=Index}/{id?}");
             });
         }
     }

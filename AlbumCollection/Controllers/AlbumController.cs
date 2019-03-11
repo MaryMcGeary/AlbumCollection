@@ -23,9 +23,9 @@ namespace AlbumCollection.Controllers
             return View(model);
         }
 
-        public ViewResult Details(int albumId)  
+        public ViewResult Details(int id)  
         {
-            Album model = albumRepo.GetById(albumId);
+            Album model = albumRepo.GetById(id);
             return View(model);
         }
     }

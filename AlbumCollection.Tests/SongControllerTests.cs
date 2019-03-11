@@ -38,7 +38,7 @@ namespace AlbumCollection.Tests
         [Fact]
         public void Check_Song_Created()    
         {
-            var result = underTest.Create();
+            var result = underTest.Create(1);
 
             Assert.IsType<ViewResult>(result);
         }

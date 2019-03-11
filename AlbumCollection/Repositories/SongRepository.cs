@@ -10,6 +10,11 @@ namespace AlbumCollection.Repositories
     {
         AlbumContext db;
 
+        public SongRepository(AlbumContext db)
+        {
+            this.db = db;
+        }
+
         public void Create(Song song)
         {
             db.Songs.Add(song);

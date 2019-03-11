@@ -56,8 +56,9 @@ body a {
     font-size: 2vh;
 }
 
-.songLink1 {
+.spaceBetween {
     padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .songLink1 a {

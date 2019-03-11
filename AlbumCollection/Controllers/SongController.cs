@@ -24,9 +24,10 @@ namespace AlbumCollection.Controllers
         }
 
         [HttpGet]
-        public ViewResult Create()
+        public ViewResult Create(int id)
         {
-            return View();
+            var model = new Song() { AlbumId = id };
+            return View(model);
         }
 
         [HttpPost]
