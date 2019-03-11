@@ -10,20 +10,21 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="~/Main.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    @*<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>*@
 </head>
 <body>
     <div class="backgroundImage">
-        <h1>My Album Index View</h1>
-        <p>
+        <h1>Albums</h1>
+        <h3>Want to see some songs? Go ahead, pick an album.</h3>
+        @*<p>
             Here's all my albums.
-        </p>
+        </p>*@
         @*<ul>
                 @foreach (var album in Model)
                 {
@@ -32,24 +33,29 @@
                 }
             </ul>*@
 
-        <div class="allAlbums">
+        @*<div class="allAlbums">*@
            
             <div class="container" id="albumGallery">
                 @{ int i = 0;}
                 @foreach (var album in Model)
                 {
                     <section class="grid-item grid-item @i">
-                        <h4><a href="/Album/Details/@album.AlbumId">@album.AlbumName</a></h4>
                         <img src="@album.AlbumImageLocation" />
+                        <h4><a href="/Album/Details/@album.AlbumId">@album.AlbumName</a></h4>
+
 
                     </section>
                     i++;
-                    
+
                 }
             </div>
-            @*<a href="/Song/Create/@Model.AlbumId" />Add a Song to the Album>*@
-            <p><a href="/Album">Back to list</a></p>
-        </div>
+
+            <div class="link" id="backToList">
+                @*<a href="/Song/Create/@Model.AlbumId" />Add a Song to the Album>*@
+                <p><a href="/Album">Back to list</a></p>
+            </div>
+
+        @*</div>*@
         @*</div>*@
     </div>
 </body>

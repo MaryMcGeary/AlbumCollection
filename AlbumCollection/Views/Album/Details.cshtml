@@ -25,15 +25,16 @@
 
     <div class="albumInfo">
 
-        <h2>@Model.AlbumId</h2>
-        <p>@Model.AlbumName</p>
+        @*<h2>@Model.AlbumId</h2>*@
+        <h2>@Model.AlbumName</h2>
+        <h3>by @Model.ArtistName</h3>
 
-        <h2>Songs</h2>
+        <h4>Song List</h4>
         @foreach (var song in Model.Song)
         {
             <p>@song.SongName</p>
         }
-        <a href="/Song/Create/@Model.AlbumId" />Add a song to the Album
+        <a href="/Song/Create/@Model.AlbumId" />Want to add your own song title to the Album? Go ahead, click the link.
 
         
         <a href="/Album">Back to list</a>

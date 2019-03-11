@@ -15,13 +15,27 @@
     height: 100vh;
 }
 
+    .backgroundImage h1{
+        color: darkslateblue;
+    }
+
+    .backgroundImage h2 {
+        color: darkslateblue;
+    }
+
+    .backgroundImage h3 {
+        color: darkslateblue;
+    }
+
 #albumGallery {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 2rem;
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 15vw);
+    grid-gap: 10rem;
+    width: 80%;
     height: 90%;
+    margin-left: 10vh;
+    padding-top: 10vh;
 }
 
 .container h4 {
@@ -34,8 +48,16 @@
         color: darkslateblue;
     }
 
+    .container h4 p {
+        grid-row: 2;
+    }
+
 .grid-item, img {
     width: 100%;
     height: 100%;
     object-fit: fill;
+}
+
+#backToList {
+    padding-top: 10vh;
 }
